@@ -22,7 +22,7 @@ export default function Landing() {
         <section className="overview">
           <div className="overview-container">
             <h2>Overview</h2>
-            <p>Some intro text here...</p>
+            <p>Lorem ipsum</p>
           </div>
         </section>
 
@@ -30,7 +30,7 @@ export default function Landing() {
         <section className="contact-us">
           <div className="contact-us-container">
             <h2>Contact Us</h2>
-            <p>Email us at: example@email.com</p>
+            <p>Lorem ipsum</p>
           </div>
         </section>
 
