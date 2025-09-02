@@ -1,6 +1,6 @@
 /* HERO SECTION */
 .hero {
-    min-height: 92vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,11 @@
 
 /* OVERVIEW SECTION */
 .overview {
-    background-color: #111111;
+    background: linear-gradient(
+        to top,
+        #090909 0%,
+        #111111 80%
+    );
     padding-left: 15em;
     padding-right: 15em;
     padding-top: 5em;

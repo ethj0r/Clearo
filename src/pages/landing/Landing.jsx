@@ -1,11 +1,12 @@
 import "../../styles/global.css";
 import "./Landing.css";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Landing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" id="hero">
         <div className="hero-container">
           <h1 className="hero-title">
             Clear Your Desk, Clear Your Mind.
@@ -17,7 +18,7 @@ export default function Landing() {
       </section>
 
       {/* Overview Section */}
-      <section className="overview">
+      <section className="overview" id="overview">
         <div className="overview-container">
           <h2 className="overview-title">Overview</h2>
           <p className="overview-text">
@@ -65,7 +66,7 @@ export default function Landing() {
       </section>
 
       {/* Contact Section */}
-      <section className="contact-us">
+      <section className="contact-us" id="contact-us">
         <div className="contact-us-container">
           <h2>Contact Us</h2>
           <p>Lorem ipsum</p>
