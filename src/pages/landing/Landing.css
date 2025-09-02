@@ -1,6 +1,6 @@
 /* HERO SECTION */
 .hero {
-    min-height: 100vh;
+    min-height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,3 +71,95 @@
     transform: translateY(0);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* OVERVIEW SECTION */
+.overview {
+    background-color: #111111;
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-top: 5em;
+}
+
+.overview-container {
+    display: grid;
+}
+.overview-title {
+    font-size: 2.5rem;
+    /* font-style: italic; */
+}
+
+.overview-text {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 600;
+    max-width: 700px;
+    line-height: 110%;
+    text-align: justify;
+    max-width: none;
+}
+
+.overview-text .quote {
+    font-size: 4rem;
+    margin-right: 1em;
+}
+
+.overview-text .brand {
+    color: #0088ff;
+    /* font-style: italic; */
+}
+
+.overview-text .muted {
+    color: #888;
+}
+
+/* ini masuk ke key features */
+.key-features-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.key-features-title {
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 700px;
+    max-width: none;
+}
+
+.feature-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+}
+
+.feature-item:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.feature-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 20%;
+    color: #0088ff;
+}
+
+.feature-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ccc;
+    margin-left: 10%;
+}
+
+.overview-quotes {
+    /* margin-top: 100px; */
+    padding-top: 40px;
+    color: #888;
+}
+
+.quote-last {
+    font-size: 4rem;
+    margin-right: 1em;
+    color: #ffffff;
+}
+
