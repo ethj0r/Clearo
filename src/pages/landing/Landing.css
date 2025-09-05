@@ -219,7 +219,8 @@
     font-size: 1.1rem;
     font-weight: bold;
     margin-left: 20%;
-    color: #0088ff;
+    /* color: #0088ff; */
+    color: #090909;
 }
 
 .contact-info .value {
