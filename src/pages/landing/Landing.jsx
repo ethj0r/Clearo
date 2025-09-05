@@ -68,8 +68,44 @@ export default function Landing() {
       {/* Contact Section */}
       <section className="contact-us" id="contact-us">
         <div className="contact-us-container">
-          <h2>Contact Us</h2>
-          <p>Lorem ipsum</p>
+          <h2 className="contact-us-title overview-title">Contact Us</h2>
+
+          <div className="contact-card">
+            <div className="contact-info">
+              <div className="row">
+                <span className="label">E-mail</span>
+                <span className="value">
+                  13524026@mahasiswa.itb.ac.id<br />
+                  ethgalleryin@gmail.com
+                </span>
+              </div>
+
+              <div className="row">
+                <span className="label">GitHub</span>
+                <span className="value">ethj0r</span>
+              </div>
+
+              <div className="row">
+                <span className="label">LinkedIn</span>
+                <span className="value">Made Branenda Jordhy</span>
+              </div>
+
+              <div className="row">
+                <span className="label">Personal Site</span>
+                <span className="value">ethjor.vercel.app</span>
+              </div>
+
+              <div className="row">
+                <span className="label">Instagram</span>
+                <span className="value">@jordhhhy</span>
+              </div>
+            </div>
+
+            <div className="contact-avatar">
+              <img src="memoji.webp" alt="Memoji" />
+            </div>
+
+          </div>
         </div>
       </section>
 
