@@ -7,7 +7,7 @@ export default function HeaderNavbar() {
     <>
       <nav className="top-strip" aria-label="Top strip">
         <p>
-          developed by <span className="highlight" href="ethjor.vercel.app">Jordhy Branenda</span>
+          developed by <a className="highlight" href="ethjor.vercel.app">Jordhy Branenda</a>
         </p>
       </nav>
 
