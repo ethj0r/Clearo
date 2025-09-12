@@ -1,5 +1,6 @@
 import "../../styles/global.css";
 import "./Landing.css";
+import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 export default function Landing() {
@@ -13,7 +14,9 @@ export default function Landing() {
             <br />
             Focus Made Visible.
           </h1>
-          <button className="hero-btn">Get Started</button>
+          <Link to="/dashboard">
+            <button link="../dashboard/Dashboard.jsx"className="hero-btn">Get Started</button>
+          </Link>
         </div>
       </section>
 

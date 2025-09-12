@@ -216,7 +216,7 @@
 }
 
 .contact-info .label {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-left: 20%;
     /* color: #0088ff; */
@@ -224,8 +224,8 @@
 }
 
 .contact-info .value {
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     color: #ccc;
     /* margin-left: ; */
     line-height: 1.2;
