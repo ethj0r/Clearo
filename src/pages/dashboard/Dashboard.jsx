@@ -8,7 +8,9 @@ export default function Dashboard() {
       {/* Timer section */}
       <section className="timer" id="timer">
         <div className="timer-container">
-
+          <div className="timer-card">
+            <h2>anjay</h2>
+          </div>
         </div>
       </section>
 

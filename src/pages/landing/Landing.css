@@ -6,59 +6,43 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
     background: url("/hero-bg.svg") #090909;
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: auto;
-    /* background-position-x: 0.0001%; */
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    padding-left: 0;
-    padding-right: 0;
+    background-size: cover;
 }
 
 .hero h1 {
     color: #ffffff;
     font-size: 3em;
     line-height: 1.1;
+    padding: 0 1rem;
 }
 
 .hero-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     padding: 0.75rem 2rem;
     border-radius: 999px;
-
-    width: 30%;
+    width: 80%;
     max-width: 400px;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 0.3px;
     cursor: pointer;
-
     transition: all 0.25s ease;
     position: relative;
     overflow: hidden;
-
     background: rgba(142, 142, 147, 0.25);
     color: #ffffff;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border: 1px solid rgba(142, 142, 147, 0.35);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-.hero-btn:hover {
-    background: rgba(142, 142, 147, 0.35);
-    transform: translateY(-2px);
 }
 
 .hero-btn:hover {
@@ -74,49 +58,42 @@
 
 /* OVERVIEW SECTION */
 .overview {
-    background: linear-gradient(
-        to top,
-        #090909 0%,
-        #111111 80%
-    );
-    padding-left: 15em;
-    padding-right: 15em;
-    padding-top: 5em;
+    background: linear-gradient(to top, #090909 0%, #111111 80%);
+    padding: 5em 2rem;
 }
 
 .overview-container {
+    max-width: 1080px;
+    margin: 0 auto;
     display: grid;
 }
+
 .overview-title {
     font-size: 2.5rem;
-    /* font-style: italic; */
 }
 
 .overview-text {
     font-size: 2rem;
     line-height: 1.6;
     font-weight: 600;
-    max-width: 700px;
     line-height: 110%;
     text-align: justify;
-    max-width: none;
 }
 
 .overview-text .quote {
     font-size: 4rem;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 .overview-text .brand {
     color: #0088ff;
-    /* font-style: italic; */
 }
 
 .overview-text .muted {
     color: #888;
 }
 
-/* ini masuk ke key features */
+/* KEY FEATURES */
 .key-features-container {
     display: flex;
     flex-direction: column;
@@ -125,8 +102,6 @@
 .key-features-title {
     font-size: 2rem;
     font-weight: 600;
-    max-width: 700px;
-    max-width: none;
 }
 
 .feature-item {
@@ -135,6 +110,7 @@
     align-items: start;
     padding: 1rem 0;
     border-top: 1px solid #333;
+    gap: 1rem;
 }
 
 .feature-item:last-child {
@@ -156,34 +132,27 @@
 }
 
 .overview-quotes {
-    /* margin-top: 100px; */
     padding-top: 40px;
-    color: #888;
-    /* padding-bottom: 40px; */
     padding-bottom: 5rem;
+    color: #888;
 }
 
 .quote-last {
     font-size: 4rem;
-    margin-right: 1em;
+    margin-right: 0.5em;
     color: #ffffff;
 }
 
 /* CONTACT US SECTION */
 .contact-us {
     background: #111111;
-    padding-left: 15em;
-    padding-right: 15em;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 5em 2rem;
 }
 
-.overview-container,
 .contact-us-container {
     max-width: 1080px;
     margin: 0 auto;
 }
-
 
 .contact-card {
     position: relative;
@@ -194,7 +163,6 @@
     justify-content: space-between;
     align-items: stretch;
     text-align: left;
-
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -213,13 +181,13 @@
     grid-template-columns: 1fr 2fr;
     align-items: start;
     padding: 0.5rem 0;
+    gap: 1rem;
 }
 
 .contact-info .label {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 20%;
-    /* color: #0088ff; */
     color: #090909;
 }
 
@@ -227,15 +195,10 @@
     font-size: 1rem;
     font-weight: 500;
     color: #ccc;
-    /* margin-left: ; */
     line-height: 1.2;
 }
 
 .contact-avatar {
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 100%;          */
     position: absolute;
     right: 3em;
     bottom: -1.4em;
@@ -247,4 +210,193 @@
     height: auto;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
     margin-bottom: -1px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet (iPad) - Portrait and smaller laptops */
+@media screen and (max-width: 1024px) {
+    .overview,
+    .contact-us {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .overview-text {
+        font-size: 1.5rem;
+    }
+    
+    .overview-text .quote,
+    .quote-last {
+        font-size: 3rem;
+    }
+    
+    .contact-avatar {
+        right: 2em;
+    }
+    
+    .contact-avatar img {
+        width: 250px;
+    }
+}
+
+/* Tablet (iPad) - Portrait */
+@media screen and (max-width: 768px) {
+    .overview,
+    .contact-us {
+        padding: 3em 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero-btn {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .overview-title {
+        font-size: 2rem;
+    }
+    
+    .overview-text {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+    
+    .overview-text .quote,
+    .quote-last {
+        font-size: 2.5rem;
+    }
+    
+    .key-features-title {
+        font-size: 1.5rem;
+    }
+    
+    .feature-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .feature-title {
+        margin-left: 0;
+    }
+    
+    .feature-desc {
+        margin-left: 0;
+    }
+    
+    .contact-card {
+        padding: 20px;
+        padding-bottom: 180px;
+    }
+    
+    .contact-info .row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+    
+    .contact-info .label {
+        margin-left: 0;
+    }
+    
+    .contact-avatar {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -1em;
+    }
+    
+    .contact-avatar img {
+        width: 200px;
+    }
+}
+
+/* Mobile (iPhone) */
+@media screen and (max-width: 480px) {
+    .hero {
+        min-height: 70vh;
+    }
+    
+    .hero h1 {
+        font-size: 1.75em;
+    }
+    
+    .hero-btn {
+        width: 95%;
+        font-size: 0.85rem;
+        padding: 0.6rem 1.25rem;
+    }
+    
+    .overview,
+    .contact-us {
+        padding: 2.5em 1rem;
+    }
+    
+    .overview-title {
+        font-size: 1.5rem;
+    }
+    
+    .overview-text {
+        font-size: 1.1rem;
+    }
+    
+    .overview-text .quote,
+    .quote-last {
+        font-size: 2rem;
+        margin-right: 0.25em;
+    }
+    
+    .key-features-title {
+        font-size: 1.25rem;
+    }
+    
+    .feature-title,
+    .feature-desc {
+        font-size: 0.9rem;
+    }
+    
+    .contact-card {
+        padding: 15px;
+        padding-bottom: 160px;
+        border-radius: 15px;
+    }
+    
+    .contact-info .label,
+    .contact-info .value {
+        font-size: 0.9rem;
+    }
+    
+    .contact-avatar img {
+        width: 160px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 375px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    
+    .overview-text {
+        font-size: 1rem;
+    }
+    
+    .overview-text .quote,
+    .quote-last {
+        font-size: 1.75rem;
+    }
+    
+    .contact-avatar img {
+        width: 140px;
+    }
+    
+    .contact-card {
+        padding-bottom: 140px;
+    }
 }

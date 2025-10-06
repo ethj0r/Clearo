@@ -1,0 +1,16 @@
+.timer-container{
+    padding-left: 15em;
+    padding-right: 15em;
+    background-color: white;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+}   
+
+.timer-card {
+    width: 454px;
+    height: 78px;
+    border-radius: 999px;
+}
