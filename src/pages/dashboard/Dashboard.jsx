@@ -139,6 +139,10 @@ export default function Dashboard() {
                                 playsInline
                                 muted
                                 className={`webcam-video ${isCameraActive ? 'active' : ''}`}
+                                style={{
+                                    transform: 'scaleX(-1)',
+                                    WebkitTransform: 'scaleX(-1)'
+                                }}
                             />
                             {!isCameraActive && (
                                 <div className="webcam-placeholder">
