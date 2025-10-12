@@ -1,5 +1,6 @@
 import "./HeaderNavbar.css";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function HeaderNavbar() {
@@ -42,9 +43,14 @@ export default function HeaderNavbar() {
                             </HashLink>
                         </li>
                         <li>
-                            <HashLink smooth to="/#contact-us" className="btn-primary" onClick={closeMenu}>
-                                Contact us
+                            <HashLink smooth to="/#contact-us" onClick={closeMenu}>
+                                Contact Us
                             </HashLink>
+                        </li>
+                        <li>
+                            <Link to="/login" className="btn-primary" onClick={closeMenu}>
+                                Login
+                            </Link>
                         </li>
                     </ul>
                 </div>
