@@ -1,8 +1,6 @@
-# Clearo - AI-Powered Pomodoro Productivity App
+# Clearo - Pomodoro Productivity App
 
 > Stay focused, stay productive. Clearo uses AI-powered object detection to keep you accountable during your Pomodoro sessions.
-
-![Clearo Banner](https://img.shields.io/badge/Status-MVP-green) ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## Overview
 
@@ -11,7 +9,7 @@ Clearo is a gamified productivity app that combines the Pomodoro Technique with 
 ### Key Features
 
 - **Pomodoro Timer** - Customizable focus sessions
-- **Real-time Object Detection** - AI-powered distraction monitoring using TensorFlow.js
+- **Real-time Object Detection** - Distraction monitoring using TensorFlow.js
 - **Gamification** - Points, streaks, and leaderboard
 - **Session History** - Track your productivity over time
 - **Secure Authentication** - JWT-based auth with PostgreSQL
@@ -130,7 +128,7 @@ clearo/
    - Each distraction: **-2 points**
 5. **End Session**: Get your score and compete on the leaderboard!
 
-## 📊 API Endpoints
+## API Endpoints
 
 ### Authentication
 ```
@@ -181,26 +179,6 @@ npm test
 npm run test:e2e
 ```
 
-## 🔐 Environment Variables
-
-### Backend (.env)
-```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=clearo_db
-DB_USER=jae
-DB_PASSWORD=
-JWT_SECRET=your_super_secret_jwt_key_minimum_32_characters_long
-JWT_EXPIRE=7d
-PORT=5001
-NODE_ENV=development
-```
-
-### Frontend (.env)
-```env
-VITE_API_URL=http://localhost:5001/api
-```
-
 ## Roadmap
 
 - [x] Basic Pomodoro timer
@@ -226,17 +204,11 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for de
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Acknowledgments
-
-- [TensorFlow.js](https://www.tensorflow.org/js) for browser-based ML
-- [COCO-SSD](https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd) for object detection model
-- [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique) by Francesco Cirillo
-
 ## Contact
 
 **Project Developer**: Jordhy Branenda
-- GitHub: [@yourusername](https://github.com/ethj0r)
-- Email: your.email@example.com
-- Website: [clearo.app](https://clearo-by-ethjor.vercel.app)
+- GitHub: [@ethj0r](https://github.com/ethj0r)
+- Email: charlesinlotte@gmail.com ethgalleryin@gmail.com 13524026@mahasiswa.itb.ac.id
+- Website: [Clearo.app](https://clearo-by-ethjor.vercel.app)
 
 ---
