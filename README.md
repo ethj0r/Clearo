@@ -196,7 +196,7 @@ npm run test:e2e
 
 ## Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Contributions are welcome! 
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -209,6 +209,6 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for de
 **Project Developer**: Jordhy Branenda
 - GitHub: [@ethj0r](https://github.com/ethj0r)
 - Email: charlesinlotte@gmail.com ethgalleryin@gmail.com 13524026@mahasiswa.itb.ac.id
-- Website: [Clearo.app](https://clearo-by-ethjor.vercel.app)
+- Website: [Clearo](https://clearo-by-ethjor.vercel.app)
 
 ---
