@@ -115,7 +115,7 @@ clearo/
 
 ## How It Works
 
-1. **Start Session**: Click "Start Pomodoro" to begin a 25-minute focus session
+1. **Start Session**: Click "Start Pomodoro" to begin a 60-minute focus session
 2. **AI Monitoring**: Your webcam feeds video to TensorFlow.js COCO-SSD model
 3. **Distraction Detection**: 
    - **Smartphone detected** → Distracted

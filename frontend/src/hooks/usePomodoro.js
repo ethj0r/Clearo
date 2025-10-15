@@ -9,7 +9,6 @@ export const usePomodoro = (initialTime = 25 * 60) => {
     const intervalRef = useRef(null);
     const lastDistractionRef = useRef(null);
 
-    // Timer countdown
     useEffect(() => {
         if (isActive && timeLeft > 0) {
             intervalRef.current = setInterval(() => {
