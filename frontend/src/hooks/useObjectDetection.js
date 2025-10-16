@@ -38,7 +38,7 @@ export const useObjectDetection = (videoRef, isActive = false) => {
             const predictions = await model.detect(video);
             setPredictions(predictions);
 
-            const objectClasses = predictions.map(p => p.class);
+        const objectClasses = predictions.map(p => p.class);
             setDetectedObjects(objectClasses);
 
             const hasPhone = objectClasses.includes('cell phone');
